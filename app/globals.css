@@ -110,3 +110,8 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
   .auth { grid-template-columns: 1fr; }
   .auth-art { padding: 28px; gap: 20px; } .auth-art blockquote { font-size: 1.4rem; } .auth-art .stat { display: none; }
 }
+
+/* Register button in header */
+.register-btn { border: 1px solid var(--brown); color: var(--brown); padding: 9px 20px; border-radius: 4px; font-weight: 600; }
+.register-btn:hover { background: #f1e6d8; }
+.auth-foot a, .auth-foot :is(a) { color: var(--brown); text-decoration: underline; text-underline-offset: 3px; }

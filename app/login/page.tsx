@@ -59,7 +59,7 @@ export default function LoginPage() {
 
           <button className="primary full" disabled={loading}>{loading ? "Signing in..." : "Login"}</button>
 
-          <p className="auth-foot">New here? <a href="#">Create an account</a></p>
+          <p className="auth-foot">New here? <Link href="/register">Create an account</Link></p>
           <Link href="/" className="auth-back">Back to Discover</Link>
         </form>
       </main>
