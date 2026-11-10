@@ -79,3 +79,34 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
   .search { width: 100%; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+/* Login button in header */
+.login-btn { background: var(--brown); color: #fff; padding: 10px 22px; border-radius: 4px; font-weight: 600; }
+.login-btn:hover { background: var(--brown-d); }
+
+/* Login page */
+.auth { display: grid; grid-template-columns: 1fr 1fr; min-height: 100vh; }
+.auth-art { background: var(--green); color: #f1ead9; padding: 48px; display: flex; flex-direction: column; justify-content: space-between; gap: 40px; }
+.auth-brand { font-family: var(--font-serif); font-weight: 700; font-size: 1.9rem; }
+.auth-art blockquote { font-family: var(--font-serif); font-style: italic; font-size: 2.2rem; line-height: 1.35; max-width: 20ch; }
+.auth-panel { display: flex; align-items: center; justify-content: center; padding: 40px 24px; background: var(--bg); }
+.auth-form { width: 100%; max-width: 400px; display: flex; flex-direction: column; gap: 8px; }
+.auth-form h1 { font-family: var(--font-serif); color: var(--brown); font-size: 2.4rem; }
+.auth-sub { color: var(--muted); margin-bottom: 18px; }
+.auth-form label { font-size: .85rem; font-weight: 600; margin-top: 10px; }
+.auth-form input[type="email"], .auth-form input[type="password"], .auth-form input[type="text"] { width: 100%; padding: 12px 14px; border: 1px solid #d9c8b2; border-radius: 6px; background: #f6efe5; font: inherit; }
+.pw { position: relative; }
+.pw button { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); color: var(--brown); font-size: .85rem; font-weight: 600; }
+.auth-row { display: flex; justify-content: space-between; align-items: center; font-size: .85rem; margin: 8px 0 14px; }
+.auth-row .check { display: flex; gap: 8px; align-items: center; font-weight: 400; margin: 0; }
+.auth-row a, .auth-foot a { color: var(--brown); text-decoration: underline; text-underline-offset: 3px; }
+.primary.full { width: 100%; padding: 14px; }
+.primary:disabled { opacity: .6; cursor: wait; }
+.auth-error { color: #a12a1a; font-size: .85rem; }
+.auth-foot { text-align: center; font-size: .9rem; margin-top: 16px; }
+.auth-back { text-align: center; font-size: .85rem; color: var(--muted); margin-top: 6px; }
+
+@media (max-width: 800px) {
+  .auth { grid-template-columns: 1fr; }
+  .auth-art { padding: 28px; gap: 20px; } .auth-art blockquote { font-size: 1.4rem; } .auth-art .stat { display: none; }
+}
