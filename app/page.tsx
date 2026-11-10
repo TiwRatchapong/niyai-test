@@ -1,6 +1,9 @@
 "use client";
 import { useState } from "react";
+<<<<<<< HEAD
+=======
 import Link from "next/link";
+>>>>>>> origin/main
 
 const GENRES = ["All Volumes", "Fantasy", "Sci-Fi", "Mystery", "Hardboiled", "Romance", "Gothic"];
 
@@ -67,8 +70,11 @@ export default function Page() {
             />
             <button className="icon" aria-label="Notifications">🔔</button>
             <button className="icon" aria-label="Account">◯</button>
+<<<<<<< HEAD
+=======
             <Link href="/register" className="register-btn">Register</Link>
             <Link href="/login" className="login-btn">Login</Link>
+>>>>>>> origin/main
           </div>
         </header>
 
