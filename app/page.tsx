@@ -67,6 +67,7 @@ export default function Page() {
             />
             <button className="icon" aria-label="Notifications">🔔</button>
             <button className="icon" aria-label="Account">◯</button>
+            <Link href="/register" className="register-btn">Register</Link>
             <Link href="/login" className="login-btn">Login</Link>
           </div>
         </header>
